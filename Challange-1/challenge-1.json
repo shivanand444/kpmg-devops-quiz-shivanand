@@ -1,0 +1,836 @@
+{
+    "version": 4,
+    "terraform_version": "1.1.5",
+    "serial": 55,
+    "lineage": "7b59e31f-9742-9da2-190e-705f9132e025",
+    "outputs": {},
+    "resources": [
+      {
+        "mode": "data",
+        "type": "azurerm_client_config",
+        "name": "current",
+        "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+        "instances": [
+          {
+            "schema_version": 0,
+            "attributes": {
+              "client_id": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+              "id": "Y2xpZW50Q29uZmlncy9jbGllbnRJZD0wNGIwNzc5NS04ZGRiLTQ2MWEtYmJlZS0wMmY5ZTFiZjdiNDY7b2JqZWN0SWQ9OGU3ZDNjYzktNzVjZS00ODEzLTg1YzAtOTYwM2JmYjg3ZGY2O3N1YnNjcmlwdGlvbklkPTAwMTgzMjA0LWVlMzMtNDBkMi1iMzNhLTY3ZTRjNzRiMzViMjt0ZW5hbnRJZD1lNWQxOGQ2MC0wZGVkLTRiZjMtYWQ5NS03N2JkMTkwNTFmZjM=",
+              "object_id": "8e7d3cc9-75ce-4813-85c0-9603bfb87df6",
+              "subscription_id": "00183204-ee33-40d2-b33a-67e4c74b35b2",
+              "tenant_id": "e5d18d60-0ded-4bf3-ad95-77bd19051ff3",
+              "timeouts": null
+            },
+            "sensitive_attributes": []
+          }
+        ]
+      },
+      {
+        "mode": "data",
+        "type": "azurerm_kubernetes_service_versions",
+        "name": "current",
+        "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+        "instances": [
+          {
+            "schema_version": 0,
+            "attributes": {
+              "id": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/providers/Microsoft.ContainerService/locations/eastus",
+              "include_preview": false,
+              "latest_version": "1.25.5",
+              "location": "eastus",
+              "timeouts": null,
+              "version_prefix": null,
+              "versions": [
+                "1.23.12",
+                "1.23.15",
+                "1.24.6",
+                "1.24.9",
+                "1.25.4",
+                "1.25.5"
+              ]
+            },
+            "sensitive_attributes": []
+          }
+        ]
+      },
+      {
+        "mode": "managed",
+        "type": "azurerm_container_registry",
+        "name": "acr",
+        "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+        "instances": [
+          {
+            "schema_version": 2,
+            "attributes": {
+              "admin_enabled": true,
+              "admin_password": "0ihlRcMSnx/CjpdCDdHwtGyHwDeKWSNRVG/uvnwOcB+ACRBo+iBj",
+              "admin_username": "wfeastus2acr15255",
+              "anonymous_pull_enabled": false,
+              "data_endpoint_enabled": false,
+              "encryption": [
+                {
+                  "enabled": false,
+                  "identity_client_id": "",
+                  "key_vault_key_id": ""
+                }
+              ],
+              "export_policy_enabled": true,
+              "georeplications": [],
+              "id": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/wf-aks-acr-rg-dev55/providers/Microsoft.ContainerRegistry/registries/wfeastus2acr15255",
+              "identity": [],
+              "location": "eastus",
+              "login_server": "wfeastus2acr15255.azurecr.io",
+              "name": "wfeastus2acr15255",
+              "network_rule_bypass_option": "AzureServices",
+              "network_rule_set": [],
+              "public_network_access_enabled": true,
+              "quarantine_policy_enabled": false,
+              "resource_group_name": "wf-aks-acr-rg-dev55",
+              "retention_policy": [
+                {
+                  "days": 7,
+                  "enabled": false
+                }
+              ],
+              "sku": "Standard",
+              "tags": {
+                "ApplicationName": "Manufacturing Data Platform",
+                "ApproverName": "example@sogeti.com",
+                "BusinessUnit": "Weatherford",
+                "Category": "core",
+                "Contact": "example@sogeti.com",
+                "Customer": "Weatherford",
+                "DataClassification": "Confidential",
+                "Environment": "dev",
+                "OwnerName": "Hussey",
+                "Region": "eu2",
+                "ResourceName": "acr-wf-aks-acr-rg-dev55-wf-dev-eu2"
+              },
+              "timeouts": null,
+              "trust_policy": [
+                {
+                  "enabled": false
+                }
+              ],
+              "zone_redundancy_enabled": false
+            },
+            "sensitive_attributes": [],
+            "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfSwic2NoZW1hX3ZlcnNpb24iOiIyIn0="
+          }
+        ]
+      },
+      {
+        "mode": "managed",
+        "type": "azurerm_key_vault",
+        "name": "example",
+        "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+        "instances": [
+          {
+            "schema_version": 2,
+            "attributes": {
+              "access_policy": [
+                {
+                  "application_id": "",
+                  "certificate_permissions": [
+                    "Create",
+                    "Delete",
+                    "DeleteIssuers",
+                    "Get",
+                    "GetIssuers",
+                    "Import",
+                    "List",
+                    "ListIssuers",
+                    "ManageContacts",
+                    "ManageIssuers",
+                    "SetIssuers",
+                    "Update"
+                  ],
+                  "key_permissions": [
+                    "Backup",
+                    "Create",
+                    "Decrypt",
+                    "Delete",
+                    "Encrypt",
+                    "Get",
+                    "Import",
+                    "List",
+                    "Purge",
+                    "Recover",
+                    "Restore",
+                    "Sign",
+                    "UnwrapKey",
+                    "Update",
+                    "Verify",
+                    "WrapKey",
+                    "Release",
+                    "Rotate",
+                    "GetRotationPolicy",
+                    "SetRotationPolicy"
+                  ],
+                  "object_id": "8e7d3cc9-75ce-4813-85c0-9603bfb87df6",
+                  "secret_permissions": [
+                    "Set",
+                    "List",
+                    "Get",
+                    "Delete",
+                    "Purge",
+                    "Recover",
+                    "Backup",
+                    "Restore"
+                  ],
+                  "storage_permissions": [
+                    "Backup",
+                    "Delete",
+                    "DeleteSAS",
+                    "Get",
+                    "GetSAS",
+                    "List",
+                    "ListSAS",
+                    "Purge",
+                    "Recover",
+                    "RegenerateKey",
+                    "Restore",
+                    "Set",
+                    "SetSAS",
+                    "Update"
+                  ],
+                  "tenant_id": "e5d18d60-0ded-4bf3-ad95-77bd19051ff3"
+                }
+              ],
+              "contact": [],
+              "enable_rbac_authorization": false,
+              "enabled_for_deployment": true,
+              "enabled_for_disk_encryption": true,
+              "enabled_for_template_deployment": true,
+              "id": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/wf-aks-acr-rg-dev55/providers/Microsoft.KeyVault/vaults/wfkeyvault2366",
+              "location": "eastus",
+              "name": "wfkeyvault2366",
+              "network_acls": [
+                {
+                  "bypass": "AzureServices",
+                  "default_action": "Allow",
+                  "ip_rules": [],
+                  "virtual_network_subnet_ids": []
+                }
+              ],
+              "public_network_access_enabled": true,
+              "purge_protection_enabled": true,
+              "resource_group_name": "wf-aks-acr-rg-dev55",
+              "sku_name": "premium",
+              "soft_delete_retention_days": 7,
+              "tags": {
+                "ApplicationName": "Manufacturing Data Platform",
+                "ApproverName": "example@sogeti.com",
+                "BusinessUnit": "Weatherford",
+                "Category": "core",
+                "Contact": "example@sogeti.com",
+                "Customer": "Weatherford",
+                "DataClassification": "Confidential",
+                "Environment": "dev",
+                "OwnerName": "Hussey",
+                "Region": "eu2",
+                "ResourceName": "key-wf-dev-eu2"
+              },
+              "tenant_id": "e5d18d60-0ded-4bf3-ad95-77bd19051ff3",
+              "timeouts": null,
+              "vault_uri": "https://wfkeyvault2366.vault.azure.net/"
+            },
+            "sensitive_attributes": [],
+            "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfSwic2NoZW1hX3ZlcnNpb24iOiIyIn0=",
+            "dependencies": [
+              "azurerm_resource_group.aks-rg",
+              "data.azurerm_client_config.current"
+            ]
+          }
+        ]
+      },
+      {
+        "mode": "managed",
+        "type": "azurerm_key_vault_key",
+        "name": "generated",
+        "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+        "instances": [
+          {
+            "schema_version": 0,
+            "attributes": {
+              "curve": "",
+              "e": "AQAB",
+              "expiration_date": null,
+              "id": "https://wfkeyvault2366.vault.azure.net/keys/wf-generated466/8b4d598a0b774f7fba52eea7790bfa80",
+              "key_opts": [
+                "decrypt",
+                "encrypt",
+                "sign",
+                "unwrapKey",
+                "verify",
+                "wrapKey"
+              ],
+              "key_size": 2048,
+              "key_type": "RSA",
+              "key_vault_id": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/wf-aks-acr-rg-dev55/providers/Microsoft.KeyVault/vaults/wfkeyvault2366",
+              "n": "6Sln96JFl884uPXFDZzOwkup86PkcZqgG_1OtzdGgDO0pyER-OQRqMOHB_NY-pkkf6z8ySTyxiMF7BLLD4gdii3mssErS7upkbd2us9LvuKn8vlOZlFeyyRvn5-C0mzx5SIx-Bwq1mijMDBKVmSwh7DFLP2fZkvdT6-JFLfSXNZ7MqF4ervHX5IfSvz647zChQL6R4nI3cNyGVf8ev8rFVIJP3PETjMly38X7onJ5md6yB90VGXuUizfO_hZrSCQxWqSlD791JKhaZft_02IkkLbVMhm0vpa5mdD5Dvkci2qXVTrVMawGSWsq1MVwBO_ivcRPhzgbHLxBMcCebuFJQ",
+              "name": "wf-generated466",
+              "not_before_date": null,
+              "public_key_openssh": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDpKWf3okWXzzi49cUNnM7CS6nzo+RxmqAb/U63N0aAM7SnIRH45BGow4cH81j6mSR/rPzJJPLGIwXsEssPiB2KLeaywStLu6mRt3a6z0u+4qfy+U5mUV7LJG+fn4LSbPHlIjH4HCrWaKMwMEpWZLCHsMUs/Z9mS91Pr4kUt9Jc1nsyoXh6u8dfkh9K/PrjvMKFAvpHicjdw3IZV/x6/ysVUgk/c8ROMyXLfxfuicnmZ3rIH3RUZe5SLN87+FmtIJDFapKUPv3UkqFpl+3/TYiSQttUyGbS+lrmZ0PkO+RyLapdVOtUxrAZJayrUxXAE7+K9xE+HOBscvEExwJ5u4Ul\n",
+              "public_key_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6Sln96JFl884uPXFDZzO\nwkup86PkcZqgG/1OtzdGgDO0pyER+OQRqMOHB/NY+pkkf6z8ySTyxiMF7BLLD4gd\nii3mssErS7upkbd2us9LvuKn8vlOZlFeyyRvn5+C0mzx5SIx+Bwq1mijMDBKVmSw\nh7DFLP2fZkvdT6+JFLfSXNZ7MqF4ervHX5IfSvz647zChQL6R4nI3cNyGVf8ev8r\nFVIJP3PETjMly38X7onJ5md6yB90VGXuUizfO/hZrSCQxWqSlD791JKhaZft/02I\nkkLbVMhm0vpa5mdD5Dvkci2qXVTrVMawGSWsq1MVwBO/ivcRPhzgbHLxBMcCebuF\nJQIDAQAB\n-----END PUBLIC KEY-----\n",
+              "resource_id": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/wf-aks-acr-rg-dev55/providers/Microsoft.KeyVault/vaults/wfkeyvault2366/keys/wf-generated466/versions/8b4d598a0b774f7fba52eea7790bfa80",
+              "resource_versionless_id": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/wf-aks-acr-rg-dev55/providers/Microsoft.KeyVault/vaults/wfkeyvault2366/keys/wf-generated466",
+              "rotation_policy": [
+                {
+                  "automatic": [],
+                  "expire_after": "",
+                  "notify_before_expiry": ""
+                }
+              ],
+              "tags": null,
+              "timeouts": null,
+              "version": "8b4d598a0b774f7fba52eea7790bfa80",
+              "versionless_id": "https://wfkeyvault2366.vault.azure.net/keys/wf-generated466",
+              "x": "",
+              "y": ""
+            },
+            "sensitive_attributes": [],
+            "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjE4MDAwMDAwMDAwMDAsInVwZGF0ZSI6MTgwMDAwMDAwMDAwMH19",
+            "dependencies": [
+              "azurerm_key_vault.example",
+              "azurerm_resource_group.aks-rg",
+              "data.azurerm_client_config.current"
+            ]
+          }
+        ]
+      },
+      {
+        "mode": "managed",
+        "type": "azurerm_key_vault_secret",
+        "name": "secret",
+        "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+        "instances": [
+          {
+            "schema_version": 0,
+            "attributes": {
+              "content_type": "",
+              "expiration_date": null,
+              "id": "https://wfkeyvault2366.vault.azure.net/secrets/wf-secret466/f978b0479123401eaed443f6e1c5a04f",
+              "key_vault_id": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/wf-aks-acr-rg-dev55/providers/Microsoft.KeyVault/vaults/wfkeyvault2366",
+              "name": "wf-secret466",
+              "not_before_date": null,
+              "resource_id": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/wf-aks-acr-rg-dev55/providers/Microsoft.KeyVault/vaults/wfkeyvault2366/secrets/wf-secret466/versions/f978b0479123401eaed443f6e1c5a04f",
+              "resource_versionless_id": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/wf-aks-acr-rg-dev55/providers/Microsoft.KeyVault/vaults/wfkeyvault2366/secrets/wf-secret466",
+              "tags": null,
+              "timeouts": null,
+              "value": "dQnNB4x\u003c+hEwYczk8Df5",
+              "version": "f978b0479123401eaed443f6e1c5a04f",
+              "versionless_id": "https://wfkeyvault2366.vault.azure.net/secrets/wf-secret466"
+            },
+            "sensitive_attributes": [
+              [
+                {
+                  "type": "get_attr",
+                  "value": "value"
+                }
+              ]
+            ],
+            "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjE4MDAwMDAwMDAwMDAsInVwZGF0ZSI6MTgwMDAwMDAwMDAwMH19",
+            "dependencies": [
+              "azurerm_key_vault.example",
+              "azurerm_resource_group.aks-rg",
+              "data.azurerm_client_config.current",
+              "random_password.postgres-pass"
+            ]
+          }
+        ]
+      },
+      {
+        "mode": "managed",
+        "type": "azurerm_network_security_group",
+        "name": "example",
+        "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+        "instances": [
+          {
+            "schema_version": 0,
+            "attributes": {
+              "id": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/wf-aks-acr-rg-dev55/providers/Microsoft.Network/networkSecurityGroups/weatherfordSecurityGroup1",
+              "location": "eastus",
+              "name": "weatherfordSecurityGroup1",
+              "resource_group_name": "wf-aks-acr-rg-dev55",
+              "security_rule": [
+                {
+                  "access": "Allow",
+                  "description": "",
+                  "destination_address_prefix": "*",
+                  "destination_address_prefixes": [],
+                  "destination_application_security_group_ids": [],
+                  "destination_port_range": "*",
+                  "destination_port_ranges": [],
+                  "direction": "Inbound",
+                  "name": "AllowVnetInBound",
+                  "priority": 100,
+                  "protocol": "Tcp",
+                  "source_address_prefix": "*",
+                  "source_address_prefixes": [],
+                  "source_application_security_group_ids": [],
+                  "source_port_range": "*",
+                  "source_port_ranges": []
+                }
+              ],
+              "tags": null,
+              "timeouts": null
+            },
+            "sensitive_attributes": [],
+            "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+            "dependencies": [
+              "azurerm_resource_group.aks-rg",
+              "azurerm_subnet.aks-default",
+              "azurerm_virtual_network.aksvnet"
+            ]
+          }
+        ]
+      },
+      {
+        "mode": "managed",
+        "type": "azurerm_postgresql_flexible_server",
+        "name": "weatherford",
+        "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+        "instances": [
+          {
+            "schema_version": 0,
+            "attributes": {
+              "administrator_login": "psqladmin",
+              "administrator_password": "dQnNB4x\u003c+hEwYczk8Df5",
+              "authentication": [
+                {
+                  "active_directory_auth_enabled": false,
+                  "password_auth_enabled": true,
+                  "tenant_id": ""
+                }
+              ],
+              "backup_retention_days": 7,
+              "create_mode": null,
+              "customer_managed_key": [],
+              "delegated_subnet_id": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/wf-aks-acr-rg-dev55/providers/Microsoft.Network/virtualNetworks/aks-vnetnetwork55/subnets/aks-default-subnet",
+              "fqdn": "weatherford-psqlflexibleserver.postgres.database.azure.com",
+              "geo_redundant_backup_enabled": false,
+              "high_availability": [
+                {
+                  "mode": "ZoneRedundant",
+                  "standby_availability_zone": "1"
+                }
+              ],
+              "id": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/wf-aks-acr-rg-dev55/providers/Microsoft.DBforPostgreSQL/flexibleServers/weatherford-psqlflexibleserver",
+              "identity": [],
+              "location": "eastus",
+              "maintenance_window": [],
+              "name": "weatherford-psqlflexibleserver",
+              "point_in_time_restore_time_in_utc": null,
+              "private_dns_zone_id": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/wf-aks-acr-rg-dev55/providers/Microsoft.Network/privateDnsZones/weatherford.postgres.database.azure.com",
+              "public_network_access_enabled": false,
+              "replication_role": "",
+              "resource_group_name": "wf-aks-acr-rg-dev55",
+              "sku_name": "MO_Standard_E4s_v3",
+              "source_server_id": null,
+              "storage_mb": 16777216,
+              "tags": null,
+              "timeouts": null,
+              "version": "13",
+              "zone": "2"
+            },
+            "sensitive_attributes": [
+              [
+                {
+                  "type": "get_attr",
+                  "value": "administrator_password"
+                }
+              ]
+            ],
+            "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozNjAwMDAwMDAwMDAwLCJkZWxldGUiOjM2MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjozNjAwMDAwMDAwMDAwfX0=",
+            "dependencies": [
+              "azurerm_key_vault.example",
+              "azurerm_key_vault_secret.secret",
+              "azurerm_network_security_group.example",
+              "azurerm_private_dns_zone.weatherford",
+              "azurerm_private_dns_zone_virtual_network_link.weatherford",
+              "azurerm_resource_group.aks-rg",
+              "azurerm_subnet.aks-default",
+              "azurerm_subnet_network_security_group_association.example",
+              "azurerm_virtual_network.aksvnet",
+              "data.azurerm_client_config.current",
+              "random_password.postgres-pass"
+            ]
+          }
+        ]
+      },
+      {
+        "mode": "managed",
+        "type": "azurerm_postgresql_flexible_server_database",
+        "name": "weatherford",
+        "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+        "instances": [
+          {
+            "schema_version": 0,
+            "attributes": {
+              "charset": "UTF8",
+              "collation": "en_US.utf8",
+              "id": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/wf-aks-acr-rg-dev55/providers/Microsoft.DBforPostgreSQL/flexibleServers/weatherford-psqlflexibleserver/databases/weatherford-db",
+              "name": "weatherford-db",
+              "server_id": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/wf-aks-acr-rg-dev55/providers/Microsoft.DBforPostgreSQL/flexibleServers/weatherford-psqlflexibleserver",
+              "timeouts": null
+            },
+            "sensitive_attributes": [],
+            "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMH19",
+            "dependencies": [
+              "azurerm_key_vault.example",
+              "azurerm_key_vault_secret.secret",
+              "azurerm_network_security_group.example",
+              "azurerm_postgresql_flexible_server.weatherford",
+              "azurerm_private_dns_zone.weatherford",
+              "azurerm_private_dns_zone_virtual_network_link.weatherford",
+              "azurerm_resource_group.aks-rg",
+              "azurerm_subnet.aks-default",
+              "azurerm_subnet_network_security_group_association.example",
+              "azurerm_virtual_network.aksvnet",
+              "data.azurerm_client_config.current",
+              "random_password.postgres-pass"
+            ]
+          }
+        ]
+      },
+      {
+        "mode": "managed",
+        "type": "azurerm_postgresql_flexible_server_firewall_rule",
+        "name": "all",
+        "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+        "instances": [
+          {
+            "schema_version": 0,
+            "attributes": {
+              "end_ip_address": "255.255.255.255",
+              "id": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/wf-aks-acr-rg-dev55/providers/Microsoft.DBforPostgreSQL/flexibleServers/weatherford-psqlflexibleserver/firewallRules/all",
+              "name": "all",
+              "server_id": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/wf-aks-acr-rg-dev55/providers/Microsoft.DBforPostgreSQL/flexibleServers/weatherford-psqlflexibleserver",
+              "start_ip_address": "0.0.0.0",
+              "timeouts": null
+            },
+            "sensitive_attributes": [],
+            "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+            "dependencies": [
+              "azurerm_key_vault.example",
+              "azurerm_key_vault_secret.secret",
+              "azurerm_network_security_group.example",
+              "azurerm_postgresql_flexible_server.weatherford",
+              "azurerm_private_dns_zone.weatherford",
+              "azurerm_private_dns_zone_virtual_network_link.weatherford",
+              "azurerm_resource_group.aks-rg",
+              "azurerm_subnet.aks-default",
+              "azurerm_subnet_network_security_group_association.example",
+              "azurerm_virtual_network.aksvnet",
+              "data.azurerm_client_config.current",
+              "random_password.postgres-pass"
+            ]
+          }
+        ]
+      },
+      {
+        "mode": "managed",
+        "type": "azurerm_private_dns_zone",
+        "name": "weatherford",
+        "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+        "instances": [
+          {
+            "schema_version": 0,
+            "attributes": {
+              "id": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/wf-aks-acr-rg-dev55/providers/Microsoft.Network/privateDnsZones/weatherford.postgres.database.azure.com",
+              "max_number_of_record_sets": 25000,
+              "max_number_of_virtual_network_links": 1000,
+              "max_number_of_virtual_network_links_with_registration": 100,
+              "name": "weatherford.postgres.database.azure.com",
+              "number_of_record_sets": 1,
+              "resource_group_name": "wf-aks-acr-rg-dev55",
+              "soa_record": [
+                {
+                  "email": "azureprivatedns-host.microsoft.com",
+                  "expire_time": 2419200,
+                  "fqdn": "weatherford.postgres.database.azure.com.",
+                  "host_name": "azureprivatedns.net",
+                  "minimum_ttl": 10,
+                  "refresh_time": 3600,
+                  "retry_time": 300,
+                  "serial_number": 1,
+                  "tags": {},
+                  "ttl": 3600
+                }
+              ],
+              "tags": null,
+              "timeouts": null
+            },
+            "sensitive_attributes": [],
+            "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+            "dependencies": [
+              "azurerm_network_security_group.example",
+              "azurerm_resource_group.aks-rg",
+              "azurerm_subnet.aks-default",
+              "azurerm_subnet_network_security_group_association.example",
+              "azurerm_virtual_network.aksvnet"
+            ]
+          }
+        ]
+      },
+      {
+        "mode": "managed",
+        "type": "azurerm_private_dns_zone_virtual_network_link",
+        "name": "weatherford",
+        "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+        "instances": [
+          {
+            "schema_version": 0,
+            "attributes": {
+              "id": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/wf-aks-acr-rg-dev55/providers/Microsoft.Network/privateDnsZones/weatherford.postgres.database.azure.com/virtualNetworkLinks/weatherfordVnetZone.com",
+              "name": "weatherfordVnetZone.com",
+              "private_dns_zone_name": "weatherford.postgres.database.azure.com",
+              "registration_enabled": false,
+              "resource_group_name": "wf-aks-acr-rg-dev55",
+              "tags": null,
+              "timeouts": null,
+              "virtual_network_id": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/wf-aks-acr-rg-dev55/providers/Microsoft.Network/virtualNetworks/aks-vnetnetwork55"
+            },
+            "sensitive_attributes": [],
+            "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+            "dependencies": [
+              "azurerm_network_security_group.example",
+              "azurerm_private_dns_zone.weatherford",
+              "azurerm_resource_group.aks-rg",
+              "azurerm_subnet.aks-default",
+              "azurerm_subnet_network_security_group_association.example",
+              "azurerm_virtual_network.aksvnet"
+            ]
+          }
+        ]
+      },
+      {
+        "mode": "managed",
+        "type": "azurerm_resource_group",
+        "name": "aks-rg",
+        "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+        "instances": [
+          {
+            "schema_version": 0,
+            "attributes": {
+              "id": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/wf-aks-acr-rg-dev55",
+              "location": "eastus",
+              "name": "wf-aks-acr-rg-dev55",
+              "tags": {
+                "ApplicationName": "Manufacturing Data Platform",
+                "ApproverName": "example@sogeti.com",
+                "BusinessUnit": "Weatherford",
+                "Category": "core",
+                "Contact": "example@sogeti.com",
+                "Customer": "Weatherford",
+                "DataClassification": "Confidential",
+                "Environment": "dev",
+                "OwnerName": "Hussey",
+                "Region": "eu2",
+                "ResourceName": "rg-wf-aks-acr-rg-dev55-weatherford-dev-eu2"
+              },
+              "timeouts": null
+            },
+            "sensitive_attributes": [],
+            "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo1NDAwMDAwMDAwMDAwLCJkZWxldGUiOjU0MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjo1NDAwMDAwMDAwMDAwfX0="
+          }
+        ]
+      },
+      {
+        "mode": "managed",
+        "type": "azurerm_role_assignment",
+        "name": "role_acrpull",
+        "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+        "instances": []
+      },
+      {
+        "mode": "managed",
+        "type": "azurerm_subnet",
+        "name": "aks-default",
+        "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+        "instances": [
+          {
+            "schema_version": 0,
+            "attributes": {
+              "address_prefixes": [
+                "10.240.0.0/16"
+              ],
+              "delegation": [
+                {
+                  "name": "fs",
+                  "service_delegation": [
+                    {
+                      "actions": [
+                        "Microsoft.Network/virtualNetworks/subnets/join/action"
+                      ],
+                      "name": "Microsoft.DBforPostgreSQL/flexibleServers"
+                    }
+                  ]
+                }
+              ],
+              "enforce_private_link_endpoint_network_policies": false,
+              "enforce_private_link_service_network_policies": false,
+              "id": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/wf-aks-acr-rg-dev55/providers/Microsoft.Network/virtualNetworks/aks-vnetnetwork55/subnets/aks-default-subnet",
+              "name": "aks-default-subnet",
+              "private_endpoint_network_policies_enabled": true,
+              "private_link_service_network_policies_enabled": true,
+              "resource_group_name": "wf-aks-acr-rg-dev55",
+              "service_endpoint_policy_ids": null,
+              "service_endpoints": [
+                "Microsoft.Storage"
+              ],
+              "timeouts": null,
+              "virtual_network_name": "aks-vnetnetwork55"
+            },
+            "sensitive_attributes": [],
+            "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+            "dependencies": [
+              "azurerm_resource_group.aks-rg",
+              "azurerm_virtual_network.aksvnet"
+            ]
+          }
+        ]
+      },
+      {
+        "mode": "managed",
+        "type": "azurerm_subnet_network_security_group_association",
+        "name": "example",
+        "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+        "instances": [
+          {
+            "schema_version": 0,
+            "attributes": {
+              "id": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/wf-aks-acr-rg-dev55/providers/Microsoft.Network/virtualNetworks/aks-vnetnetwork55/subnets/aks-default-subnet",
+              "network_security_group_id": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/wf-aks-acr-rg-dev55/providers/Microsoft.Network/networkSecurityGroups/weatherfordSecurityGroup1",
+              "subnet_id": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/wf-aks-acr-rg-dev55/providers/Microsoft.Network/virtualNetworks/aks-vnetnetwork55/subnets/aks-default-subnet",
+              "timeouts": null
+            },
+            "sensitive_attributes": [],
+            "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+            "dependencies": [
+              "azurerm_network_security_group.example",
+              "azurerm_resource_group.aks-rg",
+              "azurerm_subnet.aks-default",
+              "azurerm_virtual_network.aksvnet"
+            ]
+          }
+        ]
+      },
+      {
+        "mode": "managed",
+        "type": "azurerm_user_assigned_identity",
+        "name": "main",
+        "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+        "instances": [
+          {
+            "schema_version": 1,
+            "attributes": {
+              "client_id": "2a98557a-092d-46ad-9121-39cad01b6ea1",
+              "id": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/wf-aks-acr-rg-dev55/providers/Microsoft.ManagedIdentity/userAssignedIdentities/wfregistery12355",
+              "location": "eastus",
+              "name": "wfregistery12355",
+              "principal_id": "44d5eec9-f8c1-41c6-98c4-9875457d0404",
+              "resource_group_name": "wf-aks-acr-rg-dev55",
+              "tags": null,
+              "tenant_id": "e5d18d60-0ded-4bf3-ad95-77bd19051ff3",
+              "timeouts": null
+            },
+            "sensitive_attributes": [],
+            "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfSwic2NoZW1hX3ZlcnNpb24iOiIxIn0=",
+            "dependencies": [
+              "azurerm_resource_group.aks-rg"
+            ]
+          }
+        ]
+      },
+      {
+        "mode": "managed",
+        "type": "azurerm_virtual_network",
+        "name": "aksvnet",
+        "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+        "instances": [
+          {
+            "schema_version": 0,
+            "attributes": {
+              "address_space": [
+                "10.0.0.0/8"
+              ],
+              "bgp_community": "",
+              "ddos_protection_plan": [],
+              "dns_servers": [],
+              "edge_zone": "",
+              "flow_timeout_in_minutes": 0,
+              "guid": "6050194a-55e3-45b6-9a03-eed6b4558191",
+              "id": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/wf-aks-acr-rg-dev55/providers/Microsoft.Network/virtualNetworks/aks-vnetnetwork55",
+              "location": "eastus",
+              "name": "aks-vnetnetwork55",
+              "resource_group_name": "wf-aks-acr-rg-dev55",
+              "subnet": [],
+              "tags": null,
+              "timeouts": null
+            },
+            "sensitive_attributes": [],
+            "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+            "dependencies": [
+              "azurerm_resource_group.aks-rg"
+            ]
+          }
+        ]
+      },
+      {
+        "mode": "managed",
+        "type": "random_password",
+        "name": "postgres-pass",
+        "provider": "provider[\"registry.terraform.io/hashicorp/random\"]",
+        "instances": [
+          {
+            "schema_version": 3,
+            "attributes": {
+              "bcrypt_hash": "$2a$10$CgOOnPbe2g8xPE2OKv3PAOkG4WptOgTCwg1Z9a1ofxw0eiTk1tc/u",
+              "id": "none",
+              "keepers": null,
+              "length": 20,
+              "lower": true,
+              "min_lower": 0,
+              "min_numeric": 0,
+              "min_special": 0,
+              "min_upper": 0,
+              "number": true,
+              "numeric": true,
+              "override_special": null,
+              "result": "dQnNB4x\u003c+hEwYczk8Df5",
+              "special": true,
+              "upper": true
+            },
+            "sensitive_attributes": [],
+            "dependencies": [
+              "azurerm_key_vault.example",
+              "azurerm_resource_group.aks-rg",
+              "data.azurerm_client_config.current"
+            ]
+          }
+        ]
+      },
+      {
+        "mode": "managed",
+        "type": "random_pet",
+        "name": "aksrandom",
+        "provider": "provider[\"registry.terraform.io/hashicorp/random\"]",
+        "instances": [
+          {
+            "schema_version": 0,
+            "attributes": {
+              "id": "possible-flamingo",
+              "keepers": null,
+              "length": 2,
+              "prefix": null,
+              "separator": "-"
+            },
+            "sensitive_attributes": []
+          }
+        ]
+      }
+    ]
+  }
+  

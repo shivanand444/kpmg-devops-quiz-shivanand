@@ -1,0 +1,309 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2023.03.05 12:35:40 =~=~=~=~=~=~=~=~=~=~=~=
+curl -s -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" | jq
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cazureuser@vm2:~$[K}[K{   "compute": {;     "azEnvironment": "AzurePublicCloud",;     "customData": "",;     "evictionPolicy": "",;     "isHostCompatibilityLayerVm": "false",;     "licenseType": "",;     "location": "eastus",;     "name": "vm2",;     "offer": "0001-com-ubuntu-server-focal",;     "osProfile": {;       "adminUsername": "azureuser",;       "computerName": "vm2",;       "disablePasswordAuthentication": "false";     },;     "osType": "Linux",;     "placementGroupId": "",;     "plan": {;       "name": "",;       "product": "",;       "publisher": "";     },;     "platformFaultDomain": "0",;     "platformUpdateDomain": "0",;     "priority": "",;     "provider": "Microsoft.Compute",;     "publicKeys": [],;     "publisher": "canonical",;     "resourceGroupName": "rg-kpmg-machine",;     "resourceId": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/rg-kpmg-machine/providers/Microsoft.Compute/virtualMachines/vm2",;     "securityProfile": {;       "secureBootEnabled": "false",;       "virtualTpmEnabled": "false";     },;     "sku": "20_04-lts-gen2",;     "storageProfile": {;       "dataDisks": [],;       "imageReference": {;         "id": "",;         "offer": "0001-com-ubuntu-server-focal",;         "publisher": "canonical",;         "sku": "20_04-lts-gen2",;         "version": "latest";       },;       "osDisk": {;         "caching": "ReadWrite",;         "createOption": "FromImage",;         "diffDiskSettings": {;           "option": "";         },;         "diskSizeGB": "30",;         "encryptionSettings": {;           "enabled": "false";         },;         "image": {;           "uri": "";         },;         "managedDisk": {;           "id": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/rg-kpmg-machine/providers/Microsoft.Compute/disks/vm2_disk1_98b75ab3ade84247a3310127915f1221",;           "storageAccountType": "Premium_LRS";         },;         "name": "vm2_disk1_98b75ab3ade84247a3310127915f1221",;         "osType": "Linux",;         "vhd": {;           "uri": "";         },;         "writeAcceleratorEnabled": "false";       },;       "resourceDisk": {;         "size": "34816";       }[A[A[A[A[A[A[A[A[A[A[A[A[A
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C}[K
+
+[K
+
+[K
+
+[K
+
+[K
+
+[K
+
+[K
+
+[K
+
+[K
+
+[K
+
+[K
+
+[K
+
+[K
+
+[K[A[A[A[A[A[A[A[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K    suod  [K[K[K[Kdo apt-get update
+
+0% [Working]
+            
+Hit:1 http://azure.archive.ubuntu.com/ubuntu focal InRelease
+
+0% [Working]
+            
+Hit:2 http://azure.archive.ubuntu.com/ubuntu focal-updates InRelease
+
+            
+Hit:3 http://azure.archive.ubuntu.com/ubuntu focal-backports InRelease
+
+            
+Hit:4 http://azure.archive.ubuntu.com/ubuntu focal-security InRelease
+
+0% [Working]
+0% [Working]
+0% [Working]
+0% [Working]
+20% [Working]
+             
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 3%
+
+Reading package lists... 3%
+
+Reading package lists... 5%
+
+Reading package lists... 5%
+
+Reading package lists... 5%
+
+Reading package lists... 5%
+
+Reading package lists... 5%
+
+Reading package lists... 5%
+
+Reading package lists... 34%
+
+Reading package lists... 34%
+
+Reading package lists... 50%
+
+Reading package lists... 50%
+
+Reading package lists... 50%
+
+Reading package lists... 50%
+
+Reading package lists... 50%
+
+Reading package lists... 50%
+
+Reading package lists... 58%
+
+Reading package lists... 58%
+
+Reading package lists... 63%
+
+Reading package lists... 63%
+
+Reading package lists... 69%
+
+Reading package lists... 69%
+
+Reading package lists... 69%
+
+Reading package lists... 71%
+
+Reading package lists... 71%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 83%
+
+Reading package lists... 83%
+
+Reading package lists... 87%
+
+Reading package lists... 87%
+
+Reading package lists... 93%
+
+Reading package lists... 93%
+
+Reading package lists... 95%
+
+Reading package lists... 95%
+
+Reading package lists... 98%
+
+Reading package lists... 98%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+]0;azureuser@vm2: ~ azureuser@vm2:~$ 
+]0;azureuser@vm2: ~ azureuser@vm2:~$ sudo apt-get update[K[K[K[K[K[Kinstall jq
+
+Reading package lists... 0%
+
+Reading package lists... 100%
+
+Reading package lists... Done
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree       
+
+Reading state information... 0%
+
+Reading state information... 0%
+
+Reading state information... Done
+jq is already the newest version (1.6-1ubuntu0.20.04.1).
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+]0;azureuser@vm2: ~ azureuser@vm2:~$ 
+]0;azureuser@vm2: ~ azureuser@vm2:~$ curl -s -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" | jq
+[1;39m{
+  [0m[34;1m"compute"[0m[1;39m: [0m[1;39m{
+    [0m[34;1m"azEnvironment"[0m[1;39m: [0m[0;32m"AzurePublicCloud"[0m[1;39m,
+    [0m[34;1m"customData"[0m[1;39m: [0m[0;32m""[0m[1;39m,
+    [0m[34;1m"evictionPolicy"[0m[1;39m: [0m[0;32m""[0m[1;39m,
+    [0m[34;1m"isHostCompatibilityLayerVm"[0m[1;39m: [0m[0;32m"false"[0m[1;39m,
+    [0m[34;1m"licenseType"[0m[1;39m: [0m[0;32m""[0m[1;39m,
+    [0m[34;1m"location"[0m[1;39m: [0m[0;32m"eastus"[0m[1;39m,
+    [0m[34;1m"name"[0m[1;39m: [0m[0;32m"vm2"[0m[1;39m,
+    [0m[34;1m"offer"[0m[1;39m: [0m[0;32m"0001-com-ubuntu-server-focal"[0m[1;39m,
+    [0m[34;1m"osProfile"[0m[1;39m: [0m[1;39m{
+      [0m[34;1m"adminUsername"[0m[1;39m: [0m[0;32m"azureuser"[0m[1;39m,
+      [0m[34;1m"computerName"[0m[1;39m: [0m[0;32m"vm2"[0m[1;39m,
+      [0m[34;1m"disablePasswordAuthentication"[0m[1;39m: [0m[0;32m"false"[0m[1;39m
+    [1;39m}[0m[1;39m,
+    [0m[34;1m"osType"[0m[1;39m: [0m[0;32m"Linux"[0m[1;39m,
+    [0m[34;1m"placementGroupId"[0m[1;39m: [0m[0;32m""[0m[1;39m,
+    [0m[34;1m"plan"[0m[1;39m: [0m[1;39m{
+      [0m[34;1m"name"[0m[1;39m: [0m[0;32m""[0m[1;39m,
+      [0m[34;1m"product"[0m[1;39m: [0m[0;32m""[0m[1;39m,
+      [0m[34;1m"publisher"[0m[1;39m: [0m[0;32m""[0m[1;39m
+    [1;39m}[0m[1;39m,
+    [0m[34;1m"platformFaultDomain"[0m[1;39m: [0m[0;32m"0"[0m[1;39m,
+    [0m[34;1m"platformUpdateDomain"[0m[1;39m: [0m[0;32m"0"[0m[1;39m,
+    [0m[34;1m"priority"[0m[1;39m: [0m[0;32m""[0m[1;39m,
+    [0m[34;1m"provider"[0m[1;39m: [0m[0;32m"Microsoft.Compute"[0m[1;39m,
+    [0m[34;1m"publicKeys"[0m[1;39m: [0m[1;39m[][0m[1;39m,
+    [0m[34;1m"publisher"[0m[1;39m: [0m[0;32m"canonical"[0m[1;39m,
+    [0m[34;1m"resourceGroupName"[0m[1;39m: [0m[0;32m"rg-kpmg-machine"[0m[1;39m,
+    [0m[34;1m"resourceId"[0m[1;39m: [0m[0;32m"/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/rg-kpmg-machine/providers/Microsoft.Compute/virtualMachines/vm2"[0m[1;39m,
+    [0m[34;1m"securityProfile"[0m[1;39m: [0m[1;39m{
+      [0m[34;1m"secureBootEnabled"[0m[1;39m: [0m[0;32m"false"[0m[1;39m,
+      [0m[34;1m"virtualTpmEnabled"[0m[1;39m: [0m[0;32m"false"[0m[1;39m
+    [1;39m}[0m[1;39m,
+    [0m[34;1m"sku"[0m[1;39m: [0m[0;32m"20_04-lts-gen2"[0m[1;39m,
+    [0m[34;1m"storageProfile"[0m[1;39m: [0m[1;39m{
+      [0m[34;1m"dataDisks"[0m[1;39m: [0m[1;39m[][0m[1;39m,
+      [0m[34;1m"imageReference"[0m[1;39m: [0m[1;39m{
+        [0m[34;1m"id"[0m[1;39m: [0m[0;32m""[0m[1;39m,
+        [0m[34;1m"offer"[0m[1;39m: [0m[0;32m"0001-com-ubuntu-server-focal"[0m[1;39m,
+        [0m[34;1m"publisher"[0m[1;39m: [0m[0;32m"canonical"[0m[1;39m,
+        [0m[34;1m"sku"[0m[1;39m: [0m[0;32m"20_04-lts-gen2"[0m[1;39m,
+        [0m[34;1m"version"[0m[1;39m: [0m[0;32m"latest"[0m[1;39m
+      [1;39m}[0m[1;39m,
+      [0m[34;1m"osDisk"[0m[1;39m: [0m[1;39m{
+        [0m[34;1m"caching"[0m[1;39m: [0m[0;32m"ReadWrite"[0m[1;39m,
+        [0m[34;1m"createOption"[0m[1;39m: [0m[0;32m"FromImage"[0m[1;39m,
+        [0m[34;1m"diffDiskSettings"[0m[1;39m: [0m[1;39m{
+          [0m[34;1m"option"[0m[1;39m: [0m[0;32m""[0m[1;39m
+        [1;39m}[0m[1;39m,
+        [0m[34;1m"diskSizeGB"[0m[1;39m: [0m[0;32m"30"[0m[1;39m,
+        [0m[34;1m"encryptionSettings"[0m[1;39m: [0m[1;39m{
+          [0m[34;1m"enabled"[0m[1;39m: [0m[0;32m"false"[0m[1;39m
+        [1;39m}[0m[1;39m,
+        [0m[34;1m"image"[0m[1;39m: [0m[1;39m{
+          [0m[34;1m"uri"[0m[1;39m: [0m[0;32m""[0m[1;39m
+        [1;39m}[0m[1;39m,
+        [0m[34;1m"managedDisk"[0m[1;39m: [0m[1;39m{
+          [0m[34;1m"id"[0m[1;39m: [0m[0;32m"/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/rg-kpmg-machine/providers/Microsoft.Compute/disks/vm2_disk1_98b75ab3ade84247a3310127915f1221"[0m[1;39m,
+          [0m[34;1m"storageAccountType"[0m[1;39m: [0m[0;32m"Premium_LRS"[0m[1;39m
+        [1;39m}[0m[1;39m,
+        [0m[34;1m"name"[0m[1;39m: [0m[0;32m"vm2_disk1_98b75ab3ade84247a3310127915f1221"[0m[1;39m,
+        [0m[34;1m"osType"[0m[1;39m: [0m[0;32m"Linux"[0m[1;39m,
+        [0m[34;1m"vhd"[0m[1;39m: [0m[1;39m{
+          [0m[34;1m"uri"[0m[1;39m: [0m[0;32m""[0m[1;39m
+        [1;39m}[0m[1;39m,
+        [0m[34;1m"writeAcceleratorEnabled"[0m[1;39m: [0m[0;32m"false"[0m[1;39m
+      [1;39m}[0m[1;39m,
+      [0m[34;1m"resourceDisk"[0m[1;39m: [0m[1;39m{
+        [0m[34;1m"size"[0m[1;39m: [0m[0;32m"34816"[0m[1;39m
+      [1;39m}[0m[1;39m
+    [1;39m}[0m[1;39m,
+    [0m[34;1m"subscriptionId"[0m[1;39m: [0m[0;32m"00183204-ee33-40d2-b33a-67e4c74b35b2"[0m[1;39m,
+    [0m[34;1m"tags"[0m[1;39m: [0m[0;32m""[0m[1;39m,
+    [0m[34;1m"tagsList"[0m[1;39m: [0m[1;39m[][0m[1;39m,
+    [0m[34;1m"userData"[0m[1;39m: [0m[0;32m"ZW52OnByb2Q="[0m[1;39m,
+    [0m[34;1m"version"[0m[1;39m: [0m[0;32m"20.04.202303020"[0m[1;39m,
+    [0m[34;1m"vmId"[0m[1;39m: [0m[0;32m"0ed893f3-e42c-4452-b1d0-d81eb662246d"[0m[1;39m,
+    [0m[34;1m"vmScaleSetName"[0m[1;39m: [0m[0;32m""[0m[1;39m,
+    [0m[34;1m"vmSize"[0m[1;39m: [0m[0;32m"Standard_B1s"[0m[1;39m,
+    [0m[34;1m"zone"[0m[1;39m: [0m[0;32m""[0m[1;39m
+  [1;39m}[0m[1;39m,
+  [0m[34;1m"network"[0m[1;39m: [0m[1;39m{
+    [0m[34;1m"interface"[0m[1;39m: [0m[1;39m[
+      [1;39m{
+        [0m[34;1m"ipv4"[0m[1;39m: [0m[1;39m{
+          [0m[34;1m"ipAddress"[0m[1;39m: [0m[1;39m[
+            [1;39m{
+              [0m[34;1m"privateIpAddress"[0m[1;39m: [0m[0;32m"172.16.0.4"[0m[1;39m,
+              [0m[34;1m"publicIpAddress"[0m[1;39m: [0m[0;32m""[0m[1;39m
+            [1;39m}[0m[1;39m
+          [1;39m][0m[1;39m,
+          [0m[34;1m"subnet"[0m[1;39m: [0m[1;39m[
+            [1;39m{
+              [0m[34;1m"address"[0m[1;39m: [0m[0;32m"172.16.0.0"[0m[1;39m,
+              [0m[34;1m"prefix"[0m[1;39m: [0m[0;32m"24"[0m[1;39m
+            [1;39m}[0m[1;39m
+          [1;39m][0m[1;39m
+        [1;39m}[0m[1;39m,
+        [0m[34;1m"ipv6"[0m[1;39m: [0m[1;39m{
+          [0m[34;1m"ipAddress"[0m[1;39m: [0m[1;39m[][0m[1;39m
+        [1;39m}[0m[1;39m,
+        [0m[34;1m"macAddress"[0m[1;39m: [0m[0;32m"00224823CEDB"[0m[1;39m
+      [1;39m}[0m[1;39m
+    [1;39m][0m[1;39m
+  [1;39m}[0m[1;39m
+[1;39m}[0m
+]0;azureuser@vm2:

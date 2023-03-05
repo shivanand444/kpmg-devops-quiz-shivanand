@@ -1,0 +1,355 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2023.03.05 12:26:11 =~=~=~=~=~=~=~=~=~=~=~=
+sudo apt-get install jq
+
+Reading package lists... 0%
+
+Reading package lists... 100%
+
+Reading package lists... Done
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree       
+
+Reading state information... 0%
+
+Reading state information... 0%
+
+Reading state information... Done
+The following additional packages will be installed:
+  libjq1 libonig5
+The following NEW packages will be installed:
+  jq libjq1 libonig5
+0 upgraded, 3 newly installed, 0 to remove and 1 not upgraded.
+Need to get 313 kB of archives.
+After this operation, 1062 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+
+0% [Working]
+            
+Get:1 http://azure.archive.ubuntu.com/ubuntu focal/universe amd64 libonig5 amd64 6.9.4-1 [142 kB]
+
+0% [1 libonig5 0 B/142 kB 0%]
+                             
+43% [Working]
+             
+Get:2 http://azure.archive.ubuntu.com/ubuntu focal-updates/universe amd64 libjq1 amd64 1.6-1ubuntu0.20.04.1 [121 kB]
+
+43% [2 libjq1 0 B/121 kB 0%]
+                            
+81% [Working]
+             
+Get:3 http://azure.archive.ubuntu.com/ubuntu focal-updates/universe amd64 jq amd64 1.6-1ubuntu0.20.04.1 [50.2 kB]
+
+81% [3 jq 0 B/50.2 kB 0%]
+                         
+100% [Working]
+              
+Fetched 313 kB in 0s (2994 kB/s)
+Selecting previously unselected package libonig5:amd64.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 58667 files and directories currently installed.)
+Preparing to unpack .../libonig5_6.9.4-1_amd64.deb ...
+Unpacking libonig5:amd64 (6.9.4-1) ...
+Selecting previously unselected package libjq1:amd64.
+Preparing to unpack .../libjq1_1.6-1ubuntu0.20.04.1_amd64.deb ...
+Unpacking libjq1:amd64 (1.6-1ubuntu0.20.04.1) ...
+Selecting previously unselected package jq.
+Preparing to unpack .../jq_1.6-1ubuntu0.20.04.1_amd64.deb ...
+Unpacking jq (1.6-1ubuntu0.20.04.1) ...
+Setting up libonig5:amd64 (6.9.4-1) ...
+Setting up libjq1:amd64 (1.6-1ubuntu0.20.04.1) ...
+Setting up jq (1.6-1ubuntu0.20.04.1) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.9) ...
+]0;azureuser@vm2: ~ azureuser@vm2:~$ sudo apt-get install jq[4Pupdate
+
+0% [Working]
+            
+Hit:1 http://azure.archive.ubuntu.com/ubuntu focal InRelease
+
+0% [Working]
+            
+Hit:2 http://azure.archive.ubuntu.com/ubuntu focal-updates InRelease
+
+            
+Hit:3 http://azure.archive.ubuntu.com/ubuntu focal-backports InRelease
+
+            
+Hit:4 http://azure.archive.ubuntu.com/ubuntu focal-security InRelease
+
+0% [Working]
+0% [Working]
+0% [Working]
+0% [Working]
+20% [Working]
+             
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 3%
+
+Reading package lists... 3%
+
+Reading package lists... 5%
+
+Reading package lists... 5%
+
+Reading package lists... 5%
+
+Reading package lists... 5%
+
+Reading package lists... 5%
+
+Reading package lists... 5%
+
+Reading package lists... 34%
+
+Reading package lists... 34%
+
+Reading package lists... 40%
+
+Reading package lists... 50%
+
+Reading package lists... 50%
+
+Reading package lists... 50%
+
+Reading package lists... 50%
+
+Reading package lists... 50%
+
+Reading package lists... 50%
+
+Reading package lists... 58%
+
+Reading package lists... 58%
+
+Reading package lists... 63%
+
+Reading package lists... 63%
+
+Reading package lists... 69%
+
+Reading package lists... 69%
+
+Reading package lists... 71%
+
+Reading package lists... 71%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 83%
+
+Reading package lists... 83%
+
+Reading package lists... 87%
+
+Reading package lists... 87%
+
+Reading package lists... 93%
+
+Reading package lists... 93%
+
+Reading package lists... 95%
+
+Reading package lists... 95%
+
+Reading package lists... 98%
+
+Reading package lists... 98%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+]0;azureuser@vm2: ~ azureuser@vm2:~$ 
+]0;azureuser@vm2: ~ azureuser@vm2:~$ sudo apt-get updateinstall jq
+
+Reading package lists... 0%
+
+Reading package lists... 100%
+
+Reading package lists... Done
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree       
+
+Reading state information... 0%
+
+Reading state information... 0%
+
+Reading state information... Done
+jq is already the newest version (1.6-1ubuntu0.20.04.1).
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+]0;azureuser@vm2: ~ azureuser@vm2:~$ 
+]0;azureuser@vm2: ~ azureuser@vm2:~$ clear
+azureuser@vm2:~$ curl -s -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" | jq
+    "placementGroupId": "",
+    "plan": {
+      "name": "",
+      "product": "",
+      "publisher": ""
+    },
+    "platformFaultDomain": "0",
+    "platformUpdateDomain": "0",
+    "priority": "",
+    "provider": "Microsoft.Compute",
+    "publicKeys": [],
+    "publisher": "canonical",
+    "resourceGroupName": "rg-kpmg-machine",
+    "resourceId": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/rg-kpmg-machine/providers/Microsoft.Compute/virtualMachines/vm2",
+    "securityProfile": {
+      "secureBootEnabled": "false",
+      "virtualTpmEnabled": "false"
+    },
+    "sku": "20_04-lts-gen2",
+    "storageProfile": {
+      "dataDisks": [],
+      "imageReference": {
+        "id": "",
+        "offer": "0001-com-ubuntu-server-focal",
+        "publisher": "canonical",
+        "sku": "20_04-lts-gen2",
+        "version": "latest"
+      },
+      "osDisk": {
+        "caching": "ReadWrite",
+        "createOption": "FromImage",
+        "diffDiskSettings": {
+          "option": ""
+        },
+        "diskSizeGB": "30",
+        "encryptionSettings": {
+          "enabled": "false"
+        },
+        "image": {
+          "uri": ""
+        },
+        "managedDisk": {
+          "id": "/subscriptions/00183204-ee33-40d2-b33a-67e4c74b35b2/resourceGroups/rg-kpmg-machine/providers/Microsoft.Compute/disks/vm2_disk1_98b75ab3ade84247a3310127915f1221",
+          "storageAccountType": "Premium_LRS"
+        },
+        "name": "vm2_disk1_98b75ab3ade84247a3310127915f1221",
+        "osType": "Linux",
+        "vhd": {
+          "uri": ""
+        },
+        "writeAcceleratorEnabled": "false"
+      },
+      "resourceDisk": {
+        "size": "34816"
+      }
+    },
+    "subscriptionId": "00183204-ee33-40d2-b33a-67e4c74b35b2",
+    "tags": "",
+    "tagsList": [],
+    "userData": "ZW52OnByb2Q=",
+    "version": "20.04.202303020",
+    "vmId": "0ed893f3-e42c-4452-b1d0-d81eb662246d",
+    "vmScaleSetName": "",
+    "vmSize": "Standard_B1s",
+    "zone": ""
+  },
+  "network": {
+    "interface": [
+      {
+        "ipv4": {
+          "ipAddress": [
+            {
+              "privateIpAddress": "172.16.0.4",
+              "publicIpAddress": ""
+            }
+          ],
+          "subnet": [
+            {
+              "address": "172.16.0.0",
+              "prefix": "24"
+            }
+          ]
+        },
+        "ipv6": {
+          "ipAddress": []
+        },
+        "macAddress": "00224823CEDB"
+      }
+    ]
+  }
+}
+azureuser@vm2:~$
